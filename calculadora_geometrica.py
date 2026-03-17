@@ -75,7 +75,7 @@ while menu != "3":
                         altura = pedir_numero("Altura: ")
 
                         area = (base * altura) / 2
-                        print("Área =", area)
+                        print(f"Área = {area:.4f}")
 
                     elif op == "2":
 
@@ -87,7 +87,7 @@ while menu != "3":
                             print("Error: esos lados no pueden formar un triángulo.")
                         else:
                             perimetro = l1 + l2 + l3
-                            print("Perímetro =", perimetro)
+                            print(f"Perímetro = {perimetro:.4f}")
 
                     elif op == "3":
 
@@ -98,7 +98,7 @@ while menu != "3":
                             print("Error: los ángulos no pueden sumar 180 o más.")
                         else:
                             angulo = 180 - (a1 + a2)
-                            print("Ángulo faltante =", angulo)
+                            print(f"Ángulo faltante = {angulo:.4f}")
 
 # CUADRADO
             elif figura == "2":
@@ -119,13 +119,13 @@ while menu != "3":
 
                         lado = pedir_numero("Lado: ")
                         area = lado ** 2
-                        print("Área =", area)
+                        print(f"Área = {area:.4f}")
 
                     elif op == "2":
 
                         lado = pedir_numero("Lado: ")
                         perimetro = lado * 4
-                        print("Perímetro =", perimetro)
+                        print(f"Perímetro = {perimetro:.4f}")
 
 # CIRCULO
             elif figura == "3":
@@ -147,19 +147,19 @@ while menu != "3":
 
                         radio = pedir_numero("Radio: ")
                         area = pi * radio ** 2
-                        print("Área =", area)
+                        print(f"Área = {area:.4f}")
 
                     elif op == "2":
 
                         radio = pedir_numero("Radio: ")
                         perimetro = 2 * pi * radio
-                        print("Perímetro =", perimetro)
+                        print(f"Perímetro ={perimetro:.4f}")
 
                     elif op == "3":
 
                         radio = pedir_numero("Radio: ")
                         diametro = 2 * radio
-                        print("Diámetro =", diametro)
+                        print(f"el Diámetro es igual a = {diametro:.4f}")
 
 # TRAPECIO
             elif figura == "4":
@@ -186,7 +186,7 @@ while menu != "3":
                             print("Error: la base menor no puede ser mayor o igual que la base mayor.")
                         else:
                             area = ((B + b) * h) / 2
-                            print("Área =", area)
+                            print(f"El Área es igual = {area:.4f}")
 
                     elif op == "2":
 
@@ -199,7 +199,7 @@ while menu != "3":
                             print("Error: la base menor no puede ser mayor que la base mayor.")
                         else:
                             perimetro = B + b + l1 + l2
-                            print("Perímetro =", perimetro)
+                            print(f"Perímetro ={perimetro:.4f}")
 
 # TRIANGULO RECTANGULO
             elif figura == "5":
@@ -223,7 +223,7 @@ while menu != "3":
                         c2 = pedir_numero("Cateto 2: ")
 
                         hip = ((c1 ** 2) + (c2 ** 2)) ** 0.5
-                        print("Hipotenusa =", hip)
+                        print(f"Hipotenusa = {hip:.4f}")
 
                     elif op == "2":
 
@@ -234,7 +234,7 @@ while menu != "3":
                             print("Error: el cateto no puede ser mayor o igual a la hipotenusa.")
                         else:
                             cateto = ((hip ** 2) - (c1 ** 2)) ** 0.5
-                            print("Cateto =", cateto)
+                            print(f"Cateto = {cateto:.4f}")
 
                     elif op == "3":
 
@@ -244,7 +244,7 @@ while menu != "3":
                             print("Error: el ángulo debe estar entre 0 y 90 grados.")
                         else:
                             faltante = 90 - angulo
-                            print("El otro ángulo es =", faltante)
+                            print(f"El otro ángulo es ={faltante:.4f}")
             else:
                 print("Opción no válida.")
 # =====================================================
@@ -285,13 +285,13 @@ while menu != "3":
 
                         lado = pedir_numero("Lado: ")
                         area = 6 * lado ** 2
-                        print("Área =", area)
+                        print(f"Área = {area:.4}")
 
                     elif op == "2":
 
                         lado = pedir_numero("Lado: ")
                         volumen = lado ** 3
-                        print("Volumen =", volumen)
+                        print(f"Volumen = {volumen:.4f}")
 
 # CONO
             elif figura == "2":
@@ -317,7 +317,7 @@ while menu != "3":
                             print("Error: la generatriz debe ser mayor que el radio.")
                         else:
                             area = pi * r * (r + g)
-                            print("Área =", area)
+                            print(f"Área = {area:.4f}")
 
                     elif op == "2":
 
@@ -325,7 +325,7 @@ while menu != "3":
                         h = pedir_numero("Altura: ")
 
                         volumen = (pi * r ** 2 * h) / 3
-                        print("Volumen =", volumen)
+                        print(f"Volumen = {volumen:.4f}")
 
 # CILINDRO
             elif figura == "3":
@@ -348,7 +348,7 @@ while menu != "3":
                         h = pedir_numero("Altura: ")
 
                         area = 2 * pi * r * (r + h)
-                        print("Área =", area)
+                        print(f"Área = {area:.4f}")
 
                     elif op == "2":
 
@@ -356,7 +356,7 @@ while menu != "3":
                         h = pedir_numero("Altura: ")
 
                         volumen = pi * r ** 2 * h
-                        print("Volumen =", volumen)
+                        print(f"Volumen ={volumen:.4f}")
 
 # ESFERA
             elif figura == "4":
@@ -377,13 +377,13 @@ while menu != "3":
 
                         r = pedir_numero("Radio: ")
                         area = 4 * pi * r ** 2
-                        print("Área =", area)
+                        print(f"Área = {area:.4f}")
 
                     elif op == "2":
 
                         r = pedir_numero("Radio: ")
                         volumen = (4/3) * pi * r ** 3
-                        print("Volumen =", volumen)
+                        print(f"Volumen ={volumen:.4f}")
         else:
             print("Opción no válida.")
 
